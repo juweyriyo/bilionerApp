@@ -27,10 +27,11 @@ class MyApp extends StatelessWidget {
             children: [
               // Text("Balance par"),
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(color: Colors.red, child: Text("1")),
-                  Container(color: Colors.red, child: Text("2")),
-                  Container(color: Colors.red, child: Text("3")),
+                  Container(color: Colors.green, child: Text("2")),
+                  Container(color: Colors.blue, child: Text("3")),
                 ],
               ),
               ElevatedButton(onPressed: afunction, child: Text("Click hare")),
