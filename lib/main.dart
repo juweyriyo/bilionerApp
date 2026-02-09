@@ -29,9 +29,19 @@ class MyApp extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Container(color: Colors.red, child: Text("1")),
-                  Container(color: Colors.green, child: Text("2")),
-                  Container(color: Colors.blue, child: Text("3")),
+                  Expanded(
+                    child: Container(
+                      width: double.infinity,
+                      color: Colors.red,
+                      child: Text("1"),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(color: Colors.green, child: Text("2")),
+                  ),
+                  Expanded(
+                    child: Container(color: Colors.blue, child: Text("3")),
+                  ),
                 ],
               ),
               ElevatedButton(onPressed: afunction, child: Text("Click hare")),
