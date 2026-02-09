@@ -25,7 +25,10 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text("Balance par"),
+              // Text("Balance par"),
+              Row(
+                children: [Container(color: Colors.red, child: Text("1"))],
+              ),
               ElevatedButton(onPressed: afunction, child: Text("Click hare")),
             ],
           ),
