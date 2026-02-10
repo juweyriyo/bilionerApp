@@ -30,16 +30,15 @@ class MyApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Expanded(
-                    child: Container(
-                      width: double.infinity,
-                      color: Colors.red,
-                      child: Text("1"),
-                    ),
+                    flex: 1,
+                    child: Container(color: Colors.red, child: Text("1")),
                   ),
                   Expanded(
+                    flex: 1,
                     child: Container(color: Colors.green, child: Text("2")),
                   ),
                   Expanded(
+                    flex: 1,
                     child: Container(color: Colors.blue, child: Text("3")),
                   ),
                 ],
