@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData.dark(),
+      theme: ThemeData.dark(useMaterial3: true),
       home: Scaffold(
         appBar: AppBar(centerTitle: true, title: Text("Billionaire App!")),
         body: Container(
@@ -27,13 +27,24 @@ class MyApp extends StatelessWidget {
             children: [
               Expanded(
                 flex: 9,
-                child: Column(children: [Text("Bank Balance: "), Text("100")]),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text("Bank Balance: "),
+                    SizedBox(height: 20),
+                    Text("100"),
+                  ],
+                ),
               ),
               Expanded(
                 flex: 1,
                 child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.red[800],
+                    minimumSize: Size(double.infinity, 0),
+                  ),
                   onPressed: afunction,
-                  child: Text("Click hare"),
+                  child: Text("Add money"),
                 ),
               ),
             ],
