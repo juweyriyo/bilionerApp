@@ -25,24 +25,7 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              // Text("Balance par"),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Expanded(
-                    flex: 1,
-                    child: Container(color: Colors.red, child: Text("1")),
-                  ),
-                  Expanded(
-                    flex: 1,
-                    child: Container(color: Colors.green, child: Text("2")),
-                  ),
-                  Expanded(
-                    flex: 1,
-                    child: Container(color: Colors.blue, child: Text("3")),
-                  ),
-                ],
-              ),
+              Column(children: [Text("Bank Balance: "), Text("100")]),
               ElevatedButton(onPressed: afunction, child: Text("Click hare")),
             ],
           ),
